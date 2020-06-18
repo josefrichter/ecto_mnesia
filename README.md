@@ -38,7 +38,7 @@ Not supported features (create issue and vote if you need them):
 
 We have a production task that needs low read-latency database and our data fits in RAM, so Mnesia is the best choice: it's part of OTP, shares same space as our app does, work fast in RAM and supports transactions (it's critical for fintech projects).
 
-Why do we need an adapter? We don't want to lock us to any specific database, since requirements can change. Ecto allows to switch databases by simply modifying the config, and we might want to go back to Postres or another DB.
+Why do we need an adapter? We don't want to lock us to any specific database, since requirements can change. Ecto allows to switch databases by simply modifying the config, and we might want to go back to Postgres or another DB.
 
 ### Clustering and using Mnesia for your project
 
